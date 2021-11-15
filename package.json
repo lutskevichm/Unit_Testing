@@ -1,0 +1,40 @@
+{
+  "name": "unit_testing",
+  "version": "1.0.0",
+  "description": "a simple unit testing project using mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "nyc npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lutskevichm/Unit_Testing.git"
+  },
+  "keywords": [
+    "mocha",
+    "unit",
+    "testing"
+  ],
+  "author": "ML",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lutskevichm/Unit_Testing/issues"
+  },
+  "homepage": "https://github.com/lutskevichm/Unit_Testing#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "eslint": "^8.2.0",
+    "eslint-config-google": "^0.14.0",
+    "mocha": "^9.1.3",
+    "mochawesome": "^7.0.1",
+    "nyc": "^15.1.0"
+  },
+  "nyc": {
+    "reporter": "html",
+    "check-coverage": true,
+    "branches": 80,
+    "lines": 80,
+    "functions": 80
+  }
+}
